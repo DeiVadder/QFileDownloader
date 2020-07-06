@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
         qDebug() << "Downloaded:" << bytes << " of "<< total;
     });
 
-    //Save to disk
+    //Save to hd
     QString savePath = QStandardPaths::writableLocation(QStandardPaths::TempLocation) + "/TestFile.pdf";
     qDebug() << "SaveToFile:" << savePath;
     QFileDownloader qfdlDisc(QUrl("https://file-examples.com/wp-content/uploads/2017/10/file-sample_150kB.pdf"),savePath);
